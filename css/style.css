@@ -3492,6 +3492,8 @@ backdrop-filter: blur(30px);
 
 /* Основной блок - 3 колонки */
 .footer__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
@@ -3500,153 +3502,221 @@ backdrop-filter: blur(30px);
 
 /* 1-я часть - логотип */
 .footer__logo-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 }
 
 .footer__logo {
     max-width: 200px;
+    width: 100%;
 }
 
 .footer__logo img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 /* 2-я часть - меню */
 .footer__menu-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 15px;
 }
 
 .footer__nav-item {
-    font-family: "Inter Tight", sans-serif;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
-    color: white;
+    color: #fff;
     text-decoration: none;
-    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease, opacity 0.3s ease;
+    -o-transition: color 0.3s ease, opacity 0.3s ease;
+    transition: color 0.3s ease, opacity 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.footer__nav-item:hover {
+.footer__nav-item:hover,
+.footer__nav-item:focus {
     color: #EF7F1A;
+    opacity: 0.9;
+    outline: none;
 }
 
 /* 3-я часть - контакты */
 .footer__contacts-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 20px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
 }
 
 .footer__question {
-    font-family: "Inter Tight", sans-serif;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 130%;
-    color: white;
+    color: #fff;
     text-align: right;
     margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 15px;
 }
 
 .footer__social-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 40px;
     height: 40px;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    text-decoration: none;
 }
 
-.footer__social-link:hover {
+.footer__social-link:hover,
+.footer__social-link:focus {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
+    outline: none;
 }
 
 .footer__social-link img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 /* Разделительная линия */
 .footer__divider {
     width: 100%;
     height: 1px;
-    background-color: white;
+    background-color: #fff;
     opacity: 0.3;
 }
 
 /* Нижний блок */
 .footer__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .footer__copyright {
-    font-family: "Inter Tight", sans-serif;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
-    color: white;
+    color: #fff;
     margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 30px;
 }
 
 .footer__link {
-    font-family: "Inter Tight", sans-serif;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
-    color: white;
+    color: #fff;
     text-decoration: none;
-    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease, text-decoration 0.3s ease;
+    -o-transition: color 0.3s ease, text-decoration 0.3s ease;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.footer__link:hover {
+.footer__link:hover,
+.footer__link:focus {
     color: #EF7F1A;
     text-decoration: underline;
+    outline: none;
 }
-
 
 .mob_links {
     display: none;
 }
+
 /* === Адаптивная верстка === */
 
 /* Планшеты */
 @media (max-width: 1024px) {
     .footer {
-        padding: 50px 0 25px 0;
+        padding: 50px 0 25px;
     }
 
     .footer__main {
         grid-template-columns: 1fr 1fr;
         gap: 30px;
-    
-        /* text-align: center; */
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
     .footer__logo {
         max-width: 180px;
+        -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
         order: -2;
     }
 
@@ -3659,6 +3729,8 @@ backdrop-filter: blur(30px);
     }
 
     .footer__contacts-section {
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
         order: -1;
     }
 
@@ -3667,9 +3739,16 @@ backdrop-filter: blur(30px);
     }
 
     .mob_links {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         height: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
         width: 100%;
         text-align: right;
@@ -3679,7 +3758,7 @@ backdrop-filter: blur(30px);
 /* Мобильные */
 @media (max-width: 768px) {
     .footer {
-        padding: 40px 0 20px 0;
+        padding: 40px 0 20px;
     }
 
     .footer__container {
@@ -3692,23 +3771,33 @@ backdrop-filter: blur(30px);
     }
 
     .footer__logo-section {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
         order: -2;
     }
 
     .footer__menu-section {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: flex-start;
         width: 50%;
     }
 
-
     .footer__question {
         text-align: left;
         font-size: 28px;
+        width: -webkit-min-content;
+        width: -moz-min-content;
         width: min-content;
     }
 
     .footer__bottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 15px;
         text-align: left;
@@ -3722,7 +3811,7 @@ backdrop-filter: blur(30px);
 /* Маленькие мобильные */
 @media (max-width: 480px) {
     .footer {
-        padding: 30px 0 15px 0;
+        padding: 30px 0 15px;
     }
 
     .footer__container {
@@ -3745,8 +3834,6 @@ backdrop-filter: blur(30px);
         font-size: 16px;
     }
 
-
-
     .footer__social {
         gap: 12px;
     }
@@ -3766,5 +3853,40 @@ backdrop-filter: blur(30px);
 
     .footer__link {
         font-size: 13px;
+    }
+}
+
+/* Поддержка старых браузеров */
+@supports not (gap: 40px) {
+    .footer__main {
+        margin: -20px;
+    }
+    
+    .footer__main > * {
+        margin: 20px;
+    }
+    
+    .footer__nav {
+        margin-bottom: -15px;
+    }
+    
+    .footer__nav-item {
+        margin-bottom: 15px;
+    }
+    
+    .footer__social {
+        margin-right: -15px;
+    }
+    
+    .footer__social-link {
+        margin-right: 15px;
+    }
+    
+    .footer__links {
+        margin-right: -30px;
+    }
+    
+    .footer__link {
+        margin-right: 30px;
     }
 }
