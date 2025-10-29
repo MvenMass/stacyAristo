@@ -190,3 +190,24 @@ const articleSwiper = new Swiper(".article__slider", {
     }
   });
 });
+
+
+const toggleButton = document.getElementById('toggleFilters');
+const filterPanel = document.getElementById('filterPanel');
+const overlay = document.getElementById('overlay');
+const closeButton = document.getElementById('closeFilters');
+
+    // Открыть/закрыть панель
+function toggleFilterPanel() {
+  filterPanel.classList.toggle('active');
+  overlay.classList.toggle('active');
+}
+
+// Закрыть по клику на оверлей
+overlay.addEventListener('click', toggleFilterPanel);
+
+// Закрыть по клику на кнопку "Закрыть"
+closeButton.addEventListener('click', toggleFilterPanel);
+
+// Открыть по клику на кнопку "Фильтры"
+toggleButton.addEventListener('click', toggleFilterPanel);

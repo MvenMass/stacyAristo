@@ -10,8 +10,9 @@ section {
 }
 
 body {
-      font-family: 'Gilroy', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     color: #000;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -4084,6 +4085,10 @@ backdrop-filter: blur(30px);
 }
 
 /* Footer Section */
+.footer-bg{
+    background-color: #F7F2EC;
+}
+
 .footer {
     background-color: #476D8B;
     border-top-right-radius: 20px;
