@@ -101,7 +101,7 @@
 
 
 .about__btn-mob {
-  display: none;
+  display: none !important;
 }
 /* ==== Адаптивная верстка About Block ==== */
 
@@ -123,7 +123,7 @@
   }
 
 .about__btn-mob {
-  display: inline-block;
+  display: flex !important;
   width: 85% !important;
 }
   
@@ -308,12 +308,10 @@
 
 
 .what-we-do__mob { 
-  display: none;
+  display: none !important;
 }
 
-.what-we-do-btn {
-  display: block !important;
-}
+
 
 @media (max-width: 900px) {
 .what-we-do__description {
@@ -325,7 +323,7 @@
 }
 .what-we-do__mob {
   margin-bottom: 30px !important;
-  display: block;
+  display: flex !important;
 }
 
 .what-we-do__mob-btn {
@@ -891,8 +889,6 @@
     padding-inline: 25px 8px;
     width: fit-content;
   }
-
-  .
 }
 
 /* Маленькие мобильные */

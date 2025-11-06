@@ -562,13 +562,8 @@ a {
 }
 /* Карточки специалистов */
 .specialist-card {
-    display: flex;
-    background: #F7F2EC;
-    border-radius: 16px;
-    overflow: hidden;
     max-width: 1069px;
     width: 100%;
-    margin-bottom: 20px;
 }
 .photo-section {
     position: relative;
@@ -605,15 +600,9 @@ a {
     position: absolute;
     top: 16px;
     right: 16px;
-    background: #f0f0f0;
+        background: #f0f0f0;
     padding: 6px 12px;
     border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #476D8B;
-    display: flex;
-    align-items: center;
-    gap: 4px;
 }
 
 
@@ -643,29 +632,13 @@ a {
 
 
 .info-section {
-    font-style: normal;
-    border-radius: 16px;
-    background-color: #fff;
-    padding: 24px;
     width: 641px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    line-height: 1.2;
-    font-weight: 400;
 }
 .name {
-    font-size: 24px;
-    font-weight: 600;
-    color: #476D8B;
     margin-bottom: 12px;
 }
 .description {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.2;
     margin-bottom: 20px;
-    color: #273648;
 }
 .directions-title {
     font-size: 16px;
@@ -674,17 +647,11 @@ a {
     margin-bottom: 12px;
 }
 .directions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
     margin-bottom: 20px;
 }
 .direction {
-    background: #f0f0f0;
     padding: 6px 14px;
-    border-radius: 20px;
     font-size: 14px;
-    color: #476D8B;
 }
 .price-section {
     display: flex;

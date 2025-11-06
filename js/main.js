@@ -76,6 +76,27 @@ const articleSwiper = new Swiper(".article__slider", {
     },
   },
 });
+
+// === Article Swiper (использует те же настройки что и review) ===
+const aricleSmall = new Swiper(".article-small__slider", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  grabCursor: true,
+  breakpoints: {
+    0: { 
+      slidesPerView: 1.1,
+      spaceBetween: 12
+    },
+    768: { 
+      slidesPerView: 2,
+      spaceBetween: 16
+    },
+    1024: { 
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+  },
+});
   // === SUIT CARD SLIDER (адаптивный для мобильных) ===
   let suitSlider;
 
@@ -197,17 +218,22 @@ const filterPanel = document.getElementById('filterPanel');
 const overlay = document.getElementById('overlay');
 const closeButton = document.getElementById('closeFilters');
 
-    // Открыть/закрыть панель
-function toggleFilterPanel() {
-  filterPanel.classList.toggle('active');
-  overlay.classList.toggle('active');
+// Проверяем наличие элементов перед добавлением обработчиков
+if (toggleButton && filterPanel && overlay && closeButton) {
+  // Открыть/закрыть панель
+  function toggleFilterPanel() {
+    filterPanel.classList.toggle('active');
+    overlay.classList.toggle('active');
+  }
+
+  // Закрыть по клику на оверлей
+  overlay.addEventListener('click', toggleFilterPanel);
+
+  // Закрыть по клику на кнопку "Закрыть"
+  closeButton.addEventListener('click', toggleFilterPanel);
+
+  // Открыть по клику на кнопку "Фильтры"
+  if (toggleButton) {
+    toggleButton.addEventListener('click', toggleFilterPanel);
+  }
 }
-
-// Закрыть по клику на оверлей
-overlay.addEventListener('click', toggleFilterPanel);
-
-// Закрыть по клику на кнопку "Закрыть"
-closeButton.addEventListener('click', toggleFilterPanel);
-
-// Открыть по клику на кнопку "Фильтры"
-toggleButton.addEventListener('click', toggleFilterPanel);

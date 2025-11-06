@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stacy Aristo — Наши специалисты</title>
+    <link rel="stylesheet" href="/assets/fonts/font.css" />
+    <link rel="stylesheet" href="css/styleAbout.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/main-article.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Шапка -->
+    <section class="hero-2">
+        <!-- ===== HEADER ===== -->
+        <header class="header">
+            <div class="container header__inner-about">
+                <div class="header__left-about">
+                    <img src="assets/img/logo.png" alt="Вершина" class="header__logo" />
+                    <div class="header__contacts">
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="/index.html">Консультации</a></li>
+                                <li><a href="/about.html">Специалисты</a></li>
+                                <li><a href="#">Супервизия</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">О нас</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path
+                            d="M14 0.199951C6.39084 0.199951 0.20004 6.39075 0.20004 14C0.20004 16.376 0.81384 18.7124 1.97784 20.774L0.22224 27.038C0.16464 27.2438 0.22044 27.4646 0.36924 27.6176C0.48384 27.7358 0.63984 27.8 0.80004 27.8C0.84804 27.8 0.89664 27.794 0.94404 27.7826L7.48164 26.1632C9.47784 27.2348 11.726 27.8 14 27.8C21.6092 27.8 27.8 21.6092 27.8 14C27.8 6.39075 21.6092 0.199951 14 0.199951ZM20.942 18.8696C20.6468 19.6868 19.2308 20.4326 18.5504 20.5328C17.9396 20.6222 17.1668 20.6606 16.3184 20.3942C15.8042 20.2322 15.1442 20.0174 14.2988 19.6568C10.745 18.1412 8.42424 14.6078 8.24664 14.3744C8.06964 14.141 6.80004 12.4778 6.80004 10.7564C6.80004 9.03495 7.71504 8.18835 8.04024 7.83795C8.36544 7.48755 8.74884 7.39995 8.98524 7.39995C9.22164 7.39995 9.45744 7.40295 9.66444 7.41255C9.88224 7.42335 10.1744 7.33035 10.4618 8.01315C10.757 8.71395 11.4656 10.4354 11.5532 10.6112C11.642 10.7864 11.7008 10.991 11.5832 11.2244C11.4656 11.4578 11.4068 11.6036 11.2292 11.8082C11.0516 12.0128 10.8572 12.2642 10.6976 12.4214C10.52 12.596 10.3358 12.785 10.5422 13.1354C10.7486 13.4858 11.4596 14.6312 12.5132 15.5588C13.8662 16.7504 15.008 17.12 15.362 17.2952C15.716 17.4704 15.923 17.441 16.1294 17.2076C16.3358 16.9736 17.015 16.1858 17.2508 15.836C17.4866 15.4862 17.723 15.5438 18.0482 15.6608C18.3734 15.7772 20.1152 16.6232 20.4692 16.7984C20.8232 16.9736 21.0596 17.0612 21.1484 17.207C21.2372 17.3522 21.2372 18.053 20.942 18.8696Z"
+                            fill="#476D8B" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path
+                            d="M14 0.199951C21.6218 0.199951 27.8 6.37815 27.8 14C27.8 21.6218 21.6218 27.8 14 27.8C6.37815 27.8 0.199951 21.6218 0.199951 14C0.199951 6.37815 6.37815 0.199951 14 0.199951ZM18.7604 19.625C19.0142 18.8462 20.2034 11.0846 20.3504 9.55515C20.3948 9.09195 20.2484 8.78415 19.9616 8.64675C19.6148 8.47995 19.1012 8.56335 18.5054 8.77815C17.6882 9.07275 7.24095 13.5086 6.63735 13.7654C6.06495 14.0084 5.52375 14.2736 5.52375 14.6576C5.52375 14.9276 5.68395 15.0794 6.12555 15.2372C6.58515 15.401 7.74255 15.752 8.42595 15.9404C9.08415 16.1222 9.83355 15.9644 10.2536 15.7034C10.6988 15.4268 15.8366 11.9888 16.2056 11.6876C16.574 11.3864 16.868 11.7722 16.5668 12.074C16.2656 12.3752 12.7388 15.7982 12.2738 16.2722C11.7092 16.8476 12.11 17.444 12.4886 17.6828C12.9212 17.9552 16.0322 20.042 16.5008 20.3768C16.9694 20.7116 17.4446 20.8634 17.8796 20.8634C18.3146 20.8634 18.5438 20.2904 18.7604 19.625Z"
+                            fill="#476D8B" />
+                    </svg>
+                    <a href="#" class="btn btn--small">Задать вопрос
+
+                    </a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="header__call">
+
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.3464 14.1139L14.7897 14.6999C14.7897 14.6999 13.4666 16.093 9.85489 12.2905C6.24325 8.48815 7.5664 7.09511 7.5664 7.09511L7.91693 6.72604C8.78056 5.81686 8.86196 4.35719 8.10846 3.29157L6.56731 1.11175C5.63478 -0.207167 3.83283 -0.381395 2.76399 0.743895L0.845592 2.76362C0.315612 3.32159 -0.0395411 4.04489 0.00353002 4.84727C0.113713 6.90002 0.990864 11.3167 5.88543 16.4698C11.0759 21.9343 15.9461 22.1515 17.9377 21.9549C18.5676 21.8928 19.1154 21.5531 19.5569 21.0882L21.2932 19.2604C22.4652 18.0265 22.1347 15.9111 20.6351 15.048L18.3001 13.704C17.3154 13.1373 16.116 13.3037 15.3464 14.1139Z"
+                            fill="#476D8B" />
+                    </svg>
+
+                </div>
+
+                <!-- выпадающее меню -->
+                <div class="header__menu">
+                    <button class="header__menu-close" aria-label="Закрыть меню">&times;</button>
+                    <a href="/index.html">Консалтинг</a>
+                    <a href="/about.html">Специалисты</a>
+                    <a href="#">О компании</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Контакты</a>
+                    <a href="#" class="btn btn--small">Заказать звонок</a>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="#">Главная</a>
+                <svg width="31" height="8" viewBox="0 0 31 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M30.3536 4.03568C30.5488 3.84042 30.5488 3.52384 30.3536 3.32858L27.1716 0.146595C26.9763 -0.0486672 26.6597 -0.0486672 26.4645 0.146595C26.2692 0.341857 26.2692 0.65844 26.4645 0.853702L29.2929 3.68213L26.4645 6.51056C26.2692 6.70582 26.2692 7.0224 26.4645 7.21766C26.6597 7.41293 26.9763 7.41293 27.1716 7.21766L30.3536 4.03568ZM0 3.68213V4.18213H30V3.68213V3.18213H0V3.68213Z"
+                        fill="#A9A9A9" />
+                </svg>
+                <a href="#">Наши специалисты</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="card-and-filter">
+        <div class="container-specialist">
+            <!-- Боковая панель -->
+            <aside class="specialists-info">
+                <img src="/assets/img/hero2.jpg" alt="Специалист">
+                <h2 class="name">Имя специалиста</h2>
+                <p class="description">
+                    Психолог, клинический психолог, нейропсихолог
+                </p>
+                <p class="additional-info">
+                    <span class="additional-info-cost">Стоимость:</span>
+                    <span class="additional-info-number">10 000 ₽</span>
+                    <span class="additional-info-time">/50 мин.</span>
+                </p>
+                <a href="#" class="suit__card-btn-5">Записаться <svg xmlns="http://www.w3.org/2000/svg" width="50"
+                        height="50" viewBox="0 0 50 50" fill="none">
+                        <rect width="50" height="50" rx="25" fill="white" />
+                        <path d="M19 31L31 19M31 19V27.597M31 19H21.9143" stroke="#476D8B" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+            </aside>
+
+            <aside class="specialists-info-mob">
+                <img src="/assets/img/hero2.jpg" alt="Специалист">
+                <h2 class="name">Имя специалиста</h2>
+                <p class="description">
+                    Психолог, клинический психолог, нейропсихолог
+                </p>
+                <div class="directions">
+                    <div class="direction">Стресс</div>
+
+                </div>
+                <div class="rating">
+                    5.0 <span>★★★★★</span> <span class="review_descr">(24 отзыва)</span>
+                </div>
+                <p class="additional-info">
+                    <span class="additional-info-cost">Стоимость:</span>
+                    <span class="additional-info-number">10 000 ₽</span>
+                    <span class="additional-info-time">/50 мин.</span>
+                </p>
+                <a href="#" class="suit__card-btn-5">Записаться <svg xmlns="http://www.w3.org/2000/svg" width="50"
+                        height="50" viewBox="0 0 50 50" fill="none">
+                        <rect width="50" height="50" rx="25" fill="white" />
+                        <path d="M19 31L31 19M31 19V27.597M31 19H21.9143" stroke="#476D8B" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+                <p class="specialist__text">
+                    <span class="specialist__small-title">С кем работает:</span>
+                    взрослые (мужчины и женщины), подростки, семьи
+                </p>
+
+                <p class="specialist__text">
+                    <span class="specialist__small-title">Методы работы:</span>
+                    Интегративный (смешанный) подход, Когнитивно-поведенческая (КПТ), Краткосрочная
+                    стратегическая терапия (КСТ), Психоанализ, Психоаналитическое направление,
+                    Эмоционально-образная терапия (ЭОТ).
+                </p>
+            </aside>
+
+
+
+
+            <!-- Фоновое затемнение -->
+            <div class="overlay" id="overlay"></div>
+
+            <!-- Основная область -->
+            <main class="main-content">
+
+
+                <!-- Карточки специалистов -->
+
+                <div class="specialist-card">
+
+                    <!-- Информация -->
+                    <div class="info-section">
+                        <div class="specialist-card__content">
+                            <h2 class="card__name">Имя специалиста</h2>
+                            <p class="description">
+                                Психолог, клинический психолог, нейропсихолог
+                            </p>
+                            <div class="rating">
+                                5.0 <span>★★★★★</span> <span class="review_descr">(24 отзыва)</span>
+                            </div>
+                            <div class="directions">
+                                <div class="direction">Стресс</div>
+
+                            </div>
+
+                            <p class="specialist__text">
+                                <span class="specialist__small-title">С кем работает:</span>
+                                взрослые (мужчины и женщины), подростки, семьи
+                            </p>
+
+                            <p class="specialist__text">
+                                <span class="specialist__small-title">Методы работы:</span>
+                                Интегративный (смешанный) подход, Когнитивно-поведенческая (КПТ), Краткосрочная
+                                стратегическая терапия (КСТ), Психоанализ, Психоаналитическое направление,
+                                Эмоционально-образная терапия (ЭОТ).
+                            </p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="specialist-card">
+
+                    <!-- Информация -->
+                    <div class="info-section">
+                        <div class="specialist-card__content">
+                            <p class="small-title__card">Имя специалиста</p>
+
+                            <p class="specialist__text">
+                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                                сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее
+                                стандартное заполнение шаблона, а также реальное распределение букв и пробелов в
+                                абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш
+                                текст.. Здесь ваш текст.."
+                            </p>
+
+                            <p class="specialist__text">
+                                Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве
+                                текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает,
+                                как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы
+                                текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые
+                                - намеренно (например, юмористические варианты)...
+                            </p>
+
+                            <a class="specialist-card__btn-about" href="#">Подробнее...</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="specialist-card">
+                    <!-- Информация -->
+                    <div class="info-section">
+                        <div class="specialist-card__content">
+                            <p class="small-title__card">С какими запросами работаю:</p>
+
+                            <div class="directions">
+                                <div class="direction">Стресс</div>
+                                <div class="direction">Панические атаки</div>
+                                <div class="direction">Кризисы в отношениях</div>
+                                <div class="direction">Низкая самооценка</div>
+                                <div class="direction">Тревога</div>
+                                <div class="direction">Депрессия</div>
+                                <div class="direction">ПТСР</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specialist-card">
+                    <!-- Информация -->
+                    <div class="info-section">
+                        <div class="specialist-card__content">
+                            <p class="small-title__card">Как проходит сессия?</p>
+
+                            <p class="specialist__text">
+                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                                сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее
+                                стандартное заполнение шаблона, а также реальное распределение букв и пробелов в
+                                абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш
+                                текст.. Здесь ваш текст.."
+                            </p>
+
+                            <p class="specialist__text">
+                                Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве
+                                текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает,
+                                как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы
+                                текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые
+                                - намеренно (например, юмористические варианты).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specialist-card">
+                    <!-- Информация -->
+                    <div class="info-section">
+                        <div class="specialist-card__content">
+                            <p class="small-title__card">Как проходит сессия?</p>
+                            <p class="specialist__text">
+                                <span class="specialist__small-title">Образование:</span>
+                                Основное высшее образование (вуз, год, специальность)
+                            </p>
+
+                            <div class="specialist__text">
+                                <span class="specialist__small-title">Повышение квалификации / Доп. обучение:</span>
+                                <ul class="specialist__text_list">
+                                    <li class="specialist__text_list-item">Курсы, тренинги, сертификаты, супервизии</li>
+                                    <li class="specialist__text_list-item">Курсы, тренинги, сертификаты, супервизии</li>
+                                    <li class="specialist__text_list-item">Курсы, тренинги, сертификаты, супервизии</li>
+                                </ul>
+                            </div>
+                            <div class="specialist__text">
+                                <span class="specialist__small-title">Повышение квалификации / Доп. обучение:</span>
+                                <ul class="specialist__photo-list">
+                                    <li class="specialist__photo-item">
+                                        <img src="./assets/img/diplom.jpg" alt="Фото диплома"
+                                            class="specialist__photo-img specialist__popup-trigger"
+                                            data-src="./assets/img/diplom.jpg">
+                                        <div class="specialist__photo-text specialist__popup-trigger"
+                                            data-src="./assets/img/diplom.jpg">
+                                            <div class="specialist__diploma-title">Диплом МИП — клинический психолог
+                                            </div>
+                                            <div class="specialist__diploma-year">2024 год</div>
+                                        </div>
+                                    </li>
+                                    <li class="specialist__photo-item">
+                                        <img src="./assets/img/diplom.jpg" alt="Фото диплома"
+                                            class="specialist__photo-img specialist__popup-trigger"
+                                            data-src="./assets/img/diplom.jpg">
+                                        <div class="specialist__photo-text specialist__popup-trigger"
+                                            data-src="./assets/img/diplom.jpg">
+                                            <div class="specialist__diploma-title">Диплом МИП — клинический психолог
+                                            </div>
+                                            <div class="specialist__diploma-year">2024 год</div>
+                                        </div>
+                                    </li>
+                                    <li class="specialist__photo-item">
+                                        <img src="./assets/img/diplom.jpg" alt="Фото диплома"
+                                            class="specialist__photo-img specialist__popup-trigger"
+                                            data-src="./assets/img/diplom.jpg">
+                                        <div class="specialist__photo-text specialist__popup-trigger"
+                                            data-src="./assets/img/diplom.jpg">
+                                            <div class="specialist__diploma-title">Диплом МИП — клинический психолог
+                                            </div>
+                                            <div class="specialist__diploma-year">2024 год</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specialist-card">
+                    <!-- Информация -->
+                    <div class="info-section">
+                        <div class="specialist-card__content">
+                            <p class="small-title__card">Проекты</p>
+
+                            <ul class="specialist__text_list">
+                                <li class="specialist__text_list-item">Участие в конференциях, ведение групп, авторские
+                                    программы</li>
+                                <li class="specialist__text_list-item">Участие в конференциях, ведение групп, авторские
+                                    программы</li>
+                                <li class="specialist__text_list-item">Участие в конференциях, ведение групп, авторские
+                                    программы</li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="specialist-card">
+                    <!-- Информация -->
+                    <div class="info-section">
+                        <div class="specialist-card__content">
+                            <p class="small-title__card">Публикации</p>
+
+                            <div class="article-small__slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide article__card">
+                                        <div class="article__image">
+                                            <div class="article__tab">01.01.2025</div>
+                                            <img src="./assets/img/blog.jpg" class="article__img"
+                                                alt="Статья о психологии">
+                                        </div>
+                                        <div class="article__content">
+                                            <h3 class="article__title">Как справляться со стрессом в современном мире
+                                            </h3>
+                                            <p class="article__description">
+                                                Практические советы и техники для управления стрессом в повседневной
+                                                жизни. Методы
+                                                релаксации и mindfulness.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide article__card">
+                                        <div class="article__image">
+                                            <div class="article__tab">01.01.2025</div>
+                                            <img src="./assets/img/blog.jpg" class="article__img"
+                                                alt="Статья об отношениях">
+                                        </div>
+                                        <div class="article__content">
+                                            <h3 class="article__title">Эффективная коммуникация в паре</h3>
+                                            <p class="article__description">
+                                                Как научиться слушать и слышать партнера. Техники конструктивного
+                                                диалога и решения
+                                                конфликтов.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide article__card">
+                                        <div class="article__image">
+                                            <div class="article__tab">01.01.2025</div>
+                                            <img src="./assets/img/blog.jpg" class="article__img"
+                                                alt="Статья о саморазвитии">
+                                        </div>
+                                        <div class="article__content">
+                                            <h3 class="article__title">Построение здоровых границ</h3>
+                                            <p class="article__description">
+                                                Почему важно устанавливать личные границы и как это делать правильно.
+                                                Примеры и
+                                                упражнения.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide article__card">
+                                        <div class="article__image">
+                                            <div class="article__tab">01.01.2025</div>
+                                            <img src="./assets/img/blog.jpg" class="article__img"
+                                                alt="Статья о тревожности">
+                                        </div>
+                                        <div class="article__content">
+                                            <h3 class="article__title">Техники борьбы с тревогой</h3>
+                                            <p class="article__description">
+                                                Простые и эффективные методы для снижения уровня тревожности.
+                                                Дыхательные упражнения и
+                                                когнитивные техники.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </section>
+    <section class="review">
+        <div class="container review__container">
+            <div class="review__header">
+                <h2 class="h2"><span>Отзывы</span>
+                    наших клиентов</h2>
+
+
+                <div class="review__arrows">
+                    <div class="review__arrow review__arrow--prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                            <path d="M1.5 13.5L13.5 1.5M13.5 1.5V10.097M13.5 1.5L4.41429 1.5" stroke="#5D5650"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="review__arrow review__arrow--next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                            <path d="M1.5 13.5L13.5 1.5M13.5 1.5V10.097M13.5 1.5L4.41429 1.5" stroke="#5D5650"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide review__card">
+                        <div class="review__card-header">
+                            <div class="review__client-info">
+                                <p class="review__client-name">Иван Иванов</p>
+                                <p class="review__date">15 января 2024</p>
+                            </div>
+                            <div class="review__stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            как проходят производственные процессы, управление персоналом, документация,
+                            ответственность, выявление основных узких мест и рисков
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide review__card">
+                        <div class="review__card-header">
+                            <div class="review__client-info">
+                                <p class="review__client-name">Мария Петрова</p>
+                                <p class="review__date">10 февраля 2024</p>
+                            </div>
+                            <div class="review__stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            как проходят производственные процессы, управление персоналом, документация,
+                            ответственность, выявление основных узких мест и рисков
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide review__card">
+                        <div class="review__card-header">
+                            <div class="review__client-info">
+                                <p class="review__client-name">Алексей Смирнов</p>
+                                <p class="review__date">5 марта 2024</p>
+                            </div>
+                            <div class="review__stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            как проходят производственные процессы, управление персоналом, документация,
+                            ответственность, выявление основных узких мест и рисков
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide review__card">
+                        <div class="review__card-header">
+                            <div class="review__client-info">
+                                <p class="review__client-name">Елена Козлова</p>
+                                <p class="review__date">20 марта 2024</p>
+                            </div>
+                            <div class="review__stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            как проходят производственные процессы, управление персоналом, документация,
+                            ответственность, выявление основных узких мест и рисков
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="about__button-block">
+                <a href="#" class="suit__card-btn">Узнать больше
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="50" height="50" rx="25" fill="white" />
+                        <path d="M19 31L31 19M31 19V27.597M31 19H21.9143" stroke="#476D8B" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок "Нужна помощь?" -->
+    <section class="promo">
+        <div class="container">
+            <div class="promo_block">
+                <h2 class="h2 promo-h2">Нужна
+                    <span>помощь?</span></h2>
+                <p class="promo-text">Опишите Ваш вопрос и мы свяжемся
+                    с Вами в течение 15 минут!</p>
+                <div class="where-start__button-block">
+                    <a href="#" class="suit__card-btn where-start__btn">Задать вопрос <svg
+                            xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <rect width="50" height="50" rx="25" fill="#476D8B" />
+                            <path d="M19 31L31 19M31 19V27.597M31 19H21.9143" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <div class="footer-bg">
+        <footer class="footer">
+            <div class="container footer__container">
+                <!-- Основной блок - 3 колонки -->
+                <div class="footer__main">
+                    <!-- 1-я часть - логотип -->
+                    <div class="footer__logo-section">
+                        <div class="footer__logo">
+                            <img src="/assets/img/logo-white.svg" alt="Логотип">
+                        </div>
+                    </div>
+
+                    <!-- 2-я часть - меню -->
+                    <div class="footer__menu-section">
+                        <nav class="footer__nav">
+                            <a href="#" class="footer__nav-item">Консультации</a>
+                            <a href="#" class="footer__nav-item">Специалисты</a>
+                            <a href="#" class="footer__nav-item">Супервизия</a>
+                            <a href="#" class="footer__nav-item">Блог</a>
+                            <a href="#" class="footer__nav-item">О нас</a>
+                        </nav>
+                    </div>
+
+                    <!-- 3-я часть - контакты -->
+                    <div class="footer__contacts-section">
+                        <p class="footer__question">Записаться</p>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link">
+                                <img src="/assets/img/foot-whatsapp.svg" alt="WhatsApp">
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img src="/assets/img/foot-telegramm.svg" alt="Telegram">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__links mob_links">
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        <a href="#" class="footer__link">Условия использования</a>
+                    </div>
+                </div>
+
+                <!-- Разделительная линия -->
+                <div class="footer__divider"></div>
+
+                <!-- Нижний блок - 3 пункта в линию -->
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© 2025 Все права защищены</p>
+                    <div class="footer__links">
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        <a href="#" class="footer__link">Условия использования</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/popup-diplom.js"></script>
+    <div class="specialist-popup" id="specialistPopup">
+        <div class="specialist-popup__content">
+            <button class="specialist-popup__close" id="closeSpecialistPopup">&times;</button>
+            <img src="./assets/img/diplom.jpg" alt="Подробный диплом" class="specialist-popup__img"
+                id="specialistPopupImg">
+        </div>
+    </div>
+
+</body>
+
+</html>

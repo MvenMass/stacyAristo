@@ -2499,7 +2499,8 @@ text-align: center;
 }
 
 .where-start__btn:hover {
-    background-color: #d46f14;
+    background-color: #87AFCE;
+    color: #fff;
 }
 
 /* Пустые области */

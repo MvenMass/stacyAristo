@@ -1,0 +1,67 @@
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #476D8B;
+    line-height: 1;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #273648;
+}
+
+.directions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.direction {
+    background: #f0f0f0;
+    border-radius: 20px;
+    color: #476D8B;
+}
+
+.rating {
+
+    font-size: 14px;
+    font-weight: 600;
+    color: #476D8B;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.info-section {
+    font-style: normal;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.specialist-card {
+    display: flex;
+    background: #F7F2EC;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .h2 {
+        font-size: 32px;
+        line-height: 110.00000000000001%;
+        letter-spacing: -1%;
+    }
+
+    .info-section {
+        padding: 30px 15px;
+    }
+}
