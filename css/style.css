@@ -13,6 +13,7 @@ body {
     font-family: 'Gilroy', sans-serif;
     color: #000;
     overflow-x: hidden;
+    background-color:#F7F2EC;
 }
 a {
     text-decoration: none;
@@ -1232,10 +1233,10 @@ body.no-scroll {
     height: 415px;
     transition: all 0.4s ease;
 }
-
+/* 
 .suit__card-list-item:nth-child(2) {
     margin-top: 50px;
-}
+} */
 
 .suit__card-list-item_number {
     color: rgba(239, 127, 26, 0.5);
@@ -2816,6 +2817,13 @@ text-align: center;
     margin: 0;
 }
 
+.about-block__quote {
+  background-color: #EAECEC;
+  border-left: 2px solid #476D8B;
+  padding: 20px;
+  color: #62768D;
+  line-height: 120%;
+}
 /* ==== Адаптивная верстка About ==== */
 
 /* Планшеты */
@@ -2828,7 +2836,9 @@ text-align: center;
         padding: 100px 0;
     }
 
-  
+   .about-block__quote {
+    font-size: .875rem;
+  }
 
     .about__content {
         gap: 30px;

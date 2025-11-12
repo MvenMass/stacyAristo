@@ -65,3 +65,9 @@
         padding: 30px 15px;
     }
 }
+
+.btn {
+    background-color: #476D8B;
+    display: inline-block;
+    color: #fff;
+}

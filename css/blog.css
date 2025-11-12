@@ -1,0 +1,275 @@
+.blog__h1 {
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 80%;
+    letter-spacing: -4%;
+    vertical-align: middle;
+    margin-bottom: 60px;
+}
+
+.tabs-conteiner {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.layout-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 30px;
+}
+
+
+
+.card-image {
+    position: relative;
+}
+
+.layout-row-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.layout-row-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.card-image {
+    max-height: 300px;
+    position: relative;
+}
+
+.card-date {
+    left: 15px;
+    top: 15px;
+    position: absolute;
+    padding: 10px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #476D8B;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: inline-block;
+}
+
+.card-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.card-category_block {
+ left: 15px;
+    bottom: 15px;
+    position: absolute;
+}
+
+.card-category {
+    
+    padding: 10px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #476D8B;
+    background-color: #EAECEC;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: inline-block;
+}
+
+.card-content-info {
+    display: flex;
+    gap: 10px;
+}
+
+
+.card-content-info-img-block-image {
+    width: 53px;
+    height: 53px;
+    border-radius: 100px;
+}
+
+
+.card-content-info_name {
+font-weight: 600;
+font-size: 18px;
+line-height: 120%;
+letter-spacing: 0%;
+margin-bottom: 4px;
+color: #273648;
+}
+
+.card-content-info__specialist {
+    color: #273648;
+
+}
+
+.card-content-info__date {
+    margin-left: auto;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-title {
+font-weight: 600;
+font-size: 24px;
+line-height: 90%;
+letter-spacing: -2%;
+vertical-align: middle;
+margin: 0;
+color: #273648;
+}
+
+.card-desc {
+line-height: 120%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #273648;
+margin: 0;
+}
+
+.card__btn-read_more {
+line-height: 130%;
+letter-spacing: -3%;
+vertical-align: middle;
+text-decoration: underline;
+color: #476D8B;
+}
+/* ---- СТИЛИ ДЛЯ ТАБОВ ---- */
+.direction {
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    padding: 10px 20px;
+    border-radius: 16px;
+    margin: 0 5px 10px 0;
+    background: #EAECEC;
+    color: #476D8B;
+    display: inline-block;
+    font-weight: 500;
+}
+.direction:hover, .direction:focus {
+    background: #476D8B;
+    color: #fff;
+    transform: scale(1.04);
+}
+/* Активная вкладка — если есть такая переменная или класс */
+.direction.active {
+    background: #273648;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Анимация появления табов */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-18px);}
+    to   { opacity: 1; transform: translateY(0);}
+}
+.tabs-conteiner .direction {
+    opacity: 0;
+    animation: fadeInDown 0.4s ease forwards;
+}
+.tabs-conteiner .direction:nth-child(1) { animation-delay: 0.04s;}
+.tabs-conteiner .direction:nth-child(2) { animation-delay: 0.12s;}
+.tabs-conteiner .direction:nth-child(3) { animation-delay: 0.20s;}
+.tabs-conteiner .direction:nth-child(4) { animation-delay: 0.28s;}
+.tabs-conteiner .direction:nth-child(5) { animation-delay: 0.36s;}
+.tabs-conteiner .direction:nth-child(6) { animation-delay: 0.44s;}
+.tabs-conteiner .direction:nth-child(7) { animation-delay: 0.52s;}
+
+/* ---- СТИЛИ ДЛЯ КАРТОЧЕК ---- */
+/* Анимация появления карточек */
+@keyframes cardFadeIn {
+    from { opacity: 0; transform: scale(0.97) translateY(18px);}
+    to   { opacity: 1; transform: scale(1) translateY(0);}
+}
+.layout-card {
+    animation-fill-mode: forwards;
+    animation: cardFadeIn 0.7s ease forwards;
+    opacity: 0;
+        background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 30px;
+}
+.layout-card:nth-child(1) { animation-delay: 0.10s;}
+.layout-card:nth-child(2) { animation-delay: 0.25s;}
+.layout-card:nth-child(3) { animation-delay: 0.40s;}
+.layout-grid.layout-row-2 .layout-card:nth-child(1) { animation-delay: 0.10s;}
+.layout-grid.layout-row-2 .layout-card:nth-child(2) { animation-delay: 0.25s;}
+
+.layout-card:hover {
+    box-shadow: 0 6px 24px rgba(71,109,139,0.14);
+     transform: translateY(-3px) scale(1.03);
+    transition: box-shadow 0.25s, transform 0.2s;
+}
+
+/* ---- АДАПТИВНЫЕ СЕТКИ ---- */
+@media (max-width: 1024px) {
+    .layout-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card-img {
+        min-height: 260px;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+    .blog__h1 {
+        font-size: 36px;
+        line-height: 110%;
+        margin-bottom: 34px;
+    }
+    .tabs-conteiner {
+        padding: 14px;
+        border-radius: 14px;
+    }
+    .direction {
+        font-size: 16px;
+        padding: 8px 13px;
+        margin-bottom: 7px;
+    }
+    .card-title {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+    .layout-card {
+        padding: 10px;
+        gap: 18px;
+    }
+    .card-content-info-img-block-image {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media (max-width: 600px) {
+    .layout-grid {
+        grid-template-columns: 1fr;
+    }
+  .card-img {
+        min-height: 260px;
+        max-height: 300px;
+    }
+    .layout-card {
+        gap: 12px;
+        font-size: 15px;
+    }
+}
+
+
