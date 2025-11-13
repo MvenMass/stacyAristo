@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 section {
-    background-color: #F7F2EC;
+    background-color: var(--soft-white);
 }
 body {
     font-family: 'Gilroy', sans-serif;
@@ -27,11 +27,11 @@ a {
     line-height: 110.00000000000001%;
     letter-spacing: -1%;
     vertical-align: middle;
-    color: #273648;
+    color: var(--dark-blue);
     margin-bottom: 60px;
 }
 .h2 span {
-    color: #476D8B;
+    color: var(--soft-blue);
 }
 /* ====== HERO (общий фон и для шапки) ====== */
 .hero {
@@ -78,11 +78,11 @@ a {
     display: flex;
     flex-direction: column;
     line-height: 1.4;
-    border-left: 1px solid #476D8B;
+    border-left: 1px solid var(--soft-blue);
     padding-left: 15px;
 }
 .header__phone {
-    color: #476D8B;
+    color: var(--soft-blue);
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
@@ -122,7 +122,7 @@ a {
     transition: color 0.3s ease;
 }
 .nav a:hover {
-    color: #476D8B;
+    color: var(--soft-blue);
 }
 /* ==========================
    BUTTON
@@ -130,8 +130,8 @@ a {
 .btn {
     display: inline-block;
     background: rgba(255, 255, 255, 0.4);
-    border: 2px solid #476D8B;
-    color: #476D8B;
+    border: 2px solid var(--soft-blue);
+    color: var(--soft-blue);
     padding: 23px 30px;
     border-radius: 40px;
     text-decoration: none;
@@ -140,7 +140,7 @@ a {
     transition: background 0.3s ease;
 }
 .btn:hover {
-    background: #e67310;
+    background: var(--dark-blue);
 }
 /* .btn--small {
     padding: 10px 20px;
@@ -169,7 +169,7 @@ a {
     line-height: 100%;
     letter-spacing: -3%;
     vertical-align: middle;
-    color: #273648;
+    color: var(--dark-blue);
     margin-bottom: 30px;
 }
 .hero__form {
@@ -185,7 +185,7 @@ a {
     background: #fff;
 }
 .btn-hero {
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     color: #fff;
 }
 /* ==========================
@@ -262,7 +262,7 @@ a {
     position: relative;
     background-position-y: 30%;
     padding-bottom: 20px;
-    background-color: #F7F2EC;
+    background-color: var(--soft-white);
 }
 .container-page-two {
     width: 100%;
@@ -272,10 +272,11 @@ a {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 30px;
-    background-color: #F7F2EC;
+    background-color: var(--soft-white);
 }
     /* Хлебные крошки */
 .breadcrumbs {
+    padding-top: 40px;
     font-size: 14px;
     color: #666;
 }
@@ -291,7 +292,7 @@ a {
     padding-top: 20px;
 }
 .suit__card-btn-2{
-    color: #476D8B;
+    color: var(--soft-blue);
     font-weight: 600;
     font-size: 18px;
     line-height: 130%;
@@ -305,7 +306,7 @@ a {
     height: 52px;
     background-color: #fff; 
     align-items: center;
-    border: 3px solid #476D8B;
+    border: 3px solid var(--soft-blue);
 }
 
 
@@ -322,7 +323,7 @@ a {
     border-radius: 40px;
     width: 186px;
     height: 52px;
-    background-color: #476D8B; 
+    background-color: var(--soft-blue); 
     gap: 10px;
     align-items: center;
 }
@@ -343,7 +344,7 @@ a {
     border-radius: 40px;
     width: 100%;
     height: 52px;
-    background-color: #476D8B; 
+    background-color: var(--soft-blue); 
     gap: 10px;
     align-items: center;
     justify-content: center;
@@ -363,7 +364,7 @@ a {
     border-radius: 40px;
     width: 186px;
     height: 52px;
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     gap: 10px;
     align-items: center;
 }
@@ -389,7 +390,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     color: white;
     border: none;
     border-radius: 30px;
@@ -594,7 +595,7 @@ a {
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
-    color: #476D8B;
+    color: var(--soft-blue);
 }
 .rating {
     position: absolute;
@@ -610,14 +611,14 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    color: #476D8B;
+    color: var(--soft-blue);
     font-size: 16px;
     padding-top: 20px;
     padding-left: 272px;
     
 }
 .filter-tag-a{
-    color: #476D8B;
+    color: var(--soft-blue);
     font-size: 16px;
     border-radius: 10px;
     border: 1px solid hsla(205, 34%, 41%, 0.2);
@@ -625,7 +626,7 @@ a {
     padding: 3px 15px;
 }
 .rating span {
-    color: #476D8B;
+    color: var(--soft-blue);
     font-size: 16px;
 }
 
@@ -667,11 +668,11 @@ a {
 .price {
     font-size: 24px;
     font-weight: 600;
-    color: #476D8B;
+    color: var(--soft-blue);
 }
 .price-unit {
     font-size: 14px;
-    color: #476D8B;
+    color: var(--soft-blue);
     font-weight: 300;
     margin-left: 4px;
 }
@@ -725,18 +726,18 @@ a {
 }
 .pagination a{
     background-color: white;
-    color: #476D8B;
+    color: var(--soft-blue);
     border-radius: 5px;
     padding: 10px 20px;
     border: 1px solid hsla(205, 34%, 41%, 0.2);
 }
 .pagination a:hover {
-    background-color:  #476D8B;
+    background-color:  var(--soft-blue);
     color: white;
 }
 .pagination .active {
     color: white;
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
 }
 .secret-button{
     display: none;
@@ -755,13 +756,13 @@ a {
     font-style: normal;
     font-weight: 600;
     font-size: 38px;
-    color:#273648;
+    color:var(--dark-blue);
     width: 268px;
     display: grid;
 }
 .seo-text-p{
     width: 590px;
-    color: #273648;
+    color: var(--dark-blue);
     display: grid;
 }
 /* ==========================
@@ -799,7 +800,7 @@ a {
     transition: color 0.3s ease;
 }
 .header__menu a:hover {
-    color: #476D8B;
+    color: var(--soft-blue);
 }
 /* Кнопка закрытия */
 .header__menu-close {
@@ -814,7 +815,7 @@ a {
     transition: transform 0.2s ease, color 0.3s ease;
 }
 .header__menu-close:hover {
-    color: #476D8B;
+    color: var(--soft-blue);
     transform: rotate(90deg);
 }
 /* Блокировка прокрутки основного контента */
@@ -877,7 +878,7 @@ body.no-scroll {
     letter-spacing: 0%;
     vertical-align: middle;
     margin-bottom: 30px;
-    color: #273648;
+    color: var(--dark-blue);
 }
 .suit__card-btn {
     color: #fff;
@@ -889,7 +890,7 @@ body.no-scroll {
     display: block;
     border-radius: 40px;
     width: fit-content;
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
 }
 .suit__card-list-item svg path {
     transition: all 0.4s ease;
@@ -901,7 +902,7 @@ body.no-scroll {
 }
 /* === HOVER-СОСТОЯНИЕ === */
 .suit__card-list-item:hover {
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     color: #fff;
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -918,7 +919,7 @@ body.no-scroll {
 /* Кнопка — фон белый, текст тёмный */
 .suit__card-list-item:hover .suit__card-btn {
     background-color: #fff;
-    color: #273648;
+    color: var(--dark-blue);
 }
 /* Services Section */
 .services {
@@ -1075,10 +1076,10 @@ body.no-scroll {
     background-image: url('../assets/img/service-card.svg');
 }
 .services__right_item:hover .services_-right_item-title {
-    color: #476D8B;
+    color: var(--soft-blue);
 }
 .services__right_item:hover .services__right_item-btn {
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     fill: #fff;
 }
 .services__right_item:hover .services__right_item-btn svg {
@@ -1210,7 +1211,7 @@ body.no-scroll {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1218,7 +1219,7 @@ body.no-scroll {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .clients-suit__arrow:hover {
-    background-color: #d46f14;
+    background-color: var(--dark-blue);
     transform: scale(1.05);
 }
 .clients-suit__arrow svg {
@@ -1290,7 +1291,7 @@ body.no-scroll {
     font-weight: 500;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
-    color: #476D8B;
+    color: var(--soft-blue);
     font-weight: 600;
     line-height: 130%;
     letter-spacing: 0%;
@@ -1326,7 +1327,7 @@ body.no-scroll {
     line-height: 120%;
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #273648;
+    color: var(--dark-blue);
 }
 .specialists__directions-title {
     font-weight: 600;
@@ -1341,14 +1342,14 @@ body.no-scroll {
 }
 .specialists__tag {
     background-color: #EAECEC;
-    color: #476D8B;
+    color: var(--soft-blue);
     padding: 12px 15px;
     border-radius: 20px;
     font-size: 16px;
 }
 .specialists__card-btn {
     display: inline-block;
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     color: white;
     padding: 12px 24px;
     border-radius: 4px;
@@ -1357,7 +1358,7 @@ body.no-scroll {
     transition: background-color 0.3s ease;
 }
 .specialists__card-btn:hover {
-    background-color: #d46f14;
+    background-color: var(--dark-blue);
 }
 .specialist__image {
     object-position: 50% 25%;
@@ -1372,7 +1373,7 @@ body.no-scroll {
     padding: 100px 0;
 }
 .where-start__container {
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     padding: 80px 40px 20px 40px;
     border-radius: 20px;
 }
@@ -1433,7 +1434,7 @@ body.no-scroll {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #476D8B;
+    color: var(--soft-blue);
     font-weight: bold;
 }
 .where-start__content-block {
@@ -1468,7 +1469,7 @@ body.no-scroll {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     gap: 50px;
     color: #fff;
     transition: background-color 0.3s ease;
@@ -1481,13 +1482,13 @@ body.no-scroll {
     justify-content: space-between;
     background-color: #fff;
     gap: 50px;
-    color: #476D8B;
+    color: var(--soft-blue);
     transition: background-color 0.3s ease;
     cursor: pointer;
     font-size: 18px;
 }
 .where-start__btn:hover {
-    background-color: #d46f14;
+    background-color: var(--dark-blue);
 }
 /* Пустые области */
 .where-start__empty {
@@ -1561,7 +1562,7 @@ body.no-scroll {
     line-height: 120%;
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #273648;
+    color: var(--dark-blue);
     margin: 0;
 }
 .about__button-block {
@@ -1635,7 +1636,7 @@ body.no-scroll {
 }
 /* Первый блок - декоративный с заголовком */
 .advantages__header-block {
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     border-radius: 20px;
     display: block;
     padding: 0px 30px;
@@ -1692,7 +1693,7 @@ body.no-scroll {
 .advantages__icon {
     width: 60px;
     height: 60px;
-    background-color: color-mix(in srgb, #476D8B 10%, white 90%);
+    background-color: color-mix(in srgb, var(--soft-blue) 10%, white 90%);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -1712,7 +1713,7 @@ body.no-scroll {
     font-size: 20px;
     line-height: 120%;
     letter-spacing: -1%;
-    color: #273648;
+    color: var(--dark-blue);
     margin: 0;
 }
 .advantages__card-text {
@@ -1727,7 +1728,7 @@ body.no-scroll {
     padding: 100px 0;
 }
 .promo_block {
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     border-radius: 20px;
     padding: 50px;
     display: flex;
@@ -1803,7 +1804,7 @@ body.no-scroll {
     width: 68px;
     height: 68px;
     border-radius: 50%;
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1811,7 +1812,7 @@ body.no-scroll {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .review__arrow:hover {
-    background-color: #d46f14;
+    background-color: var(--dark-blue);
     transform: scale(1.05);
 }
 .review__arrow svg {
@@ -1855,7 +1856,7 @@ body.no-scroll {
     line-height: 100%;
     letter-spacing: -3%;
     vertical-align: middle;
-    color: #273648;
+    color: var(--dark-blue);
     margin: 0 0 20px 0;
 }
 .review__date {
@@ -1864,12 +1865,12 @@ body.no-scroll {
     line-height: 120%;
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #273648;
+    color: var(--dark-blue);
     margin: 0;
 }
 .review__stars {
     font-size: 24px;
-    color: #476D8B;
+    color: var(--soft-blue);
     flex-shrink: 0;
 }
 .review__text {
@@ -1877,7 +1878,7 @@ body.no-scroll {
     line-height: 120%;
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #273648;
+    color: var(--dark-blue);
     margin-top: auto;
 }
 .review__container .about__button-block {
@@ -1919,7 +1920,7 @@ body.no-scroll {
     width: 68px;
     height: 68px;
     border-radius: 50%;
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1927,7 +1928,7 @@ body.no-scroll {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .article__arrow:hover {
-    background-color: #d46f14;
+    background-color: var(--dark-blue);
     transform: scale(1.05);
 }
 .article__arrow svg {
@@ -1975,7 +1976,7 @@ backdrop-filter: blur(30px);
     border-radius: 15px;
     font-weight: 600;
     font-size: 14px;
-    color: #476D8B;
+    color: var(--soft-blue);
     z-index: 2;
 }
 .article__img {
@@ -2000,7 +2001,7 @@ backdrop-filter: blur(30px);
     line-height: 130%;
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #273648;
+    color: var(--dark-blue);
     margin: 0;
 }
 .article__description {
@@ -2009,7 +2010,7 @@ backdrop-filter: blur(30px);
     line-height: 120%;
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #273648;
+    color: var(--dark-blue);
     margin: 0;
 }
 .article__container .about__button-block {
@@ -2060,7 +2061,7 @@ backdrop-filter: blur(30px);
     font-size: 20px;
     line-height: 130%;
     letter-spacing: -1%;
-    color: #273648;
+    color: var(--dark-blue);
     flex: 1;
 }
 /* Кнопка плюс/крестик */
@@ -2068,7 +2069,7 @@ backdrop-filter: blur(30px);
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     /* Белый фон кнопки */
     display: flex;
     align-items: center;
@@ -2097,16 +2098,16 @@ backdrop-filter: blur(30px);
 }
 .faq-toggle.active::before {
     transform: rotate(45deg);
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
 }
 .faq-toggle.active::after {
     transform: rotate(-45deg);
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
 }
 .faq-toggle.active {
     background-color: #fff;
     /* Остается белым при активном состоянии */
-    border-color: #476D8B;
+    border-color: var(--soft-blue);
 }
 /* Ответ — плавное раскрытие */
 .faq-answer {
@@ -2132,11 +2133,11 @@ backdrop-filter: blur(30px);
 }
 /* Footer Section */
 .footer-bg{
-    background-color: #F7F2EC;
+    background-color: var(--soft-white);
 }
 
 .footer {
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     padding: 60px 0 30px 0;

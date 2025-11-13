@@ -17,7 +17,7 @@
 
 /* Первый блок - декоративный с заголовком */
 .about-block__header-block {
-  background-color: #476D8B;
+  background-color: var(--soft-blue);
   border-radius: 1.25rem;
   display: flex;
   padding: 50px;
@@ -83,13 +83,13 @@
   line-height: 120%;
   letter-spacing: 0%;
   vertical-align: middle;
-  color: #273648;
+  color: var(--dark-blue);
   margin-bottom: 1.5625rem;
 }
 
 .about-block__quote {
   background-color: #EAECEC;
-  border-left: 2px solid #476D8B;
+  border-left: 2px solid var(--soft-blue);
   padding: 20px;
   color: #62768D;
   line-height: 120%;
@@ -97,7 +97,7 @@
 
 .about-block__text strong {
   font-weight: 600;
-  color: #273648;
+  color: var(--dark-blue);
 }
 
 
@@ -231,7 +231,7 @@
   text-align: center;
   vertical-align: middle;
   white-space: pre-line;
-  color: #273648;
+  color: var(--dark-blue);
   margin: 0;
 }
 
@@ -249,7 +249,7 @@
   max-width: 670px;
   margin: 0 auto;
   margin-bottom: 60px;
-  color: #273648;
+  color: var(--dark-blue);
   text-align: center;
   font-size: 18px;
   line-height: 120%;
@@ -304,7 +304,7 @@
   letter-spacing: -3%;
   text-align: center;
   vertical-align: middle;
-  color: #273648;
+  color: var(--dark-blue);
 }
 
 
@@ -401,7 +401,7 @@
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 60px;
-  background-color: #476D8B;
+  background-color: var(--soft-blue);
   align-items: flex-start;
   border-radius: 20px;
   padding: 80px 40px;
@@ -433,13 +433,13 @@
   width: fit-content;
   padding: 12px 28px;
   background-color: #fff;
-  color: #476D8B;
+  color: var(--soft-blue);
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
   font-size: 16px;
   transition: background-color 0.3s, transform 0.2s;
-  border: 2px solid #476D8B;
+  border: 2px solid var(--soft-blue);
 }
 
 .what-we-do__btn:hover {
@@ -789,7 +789,7 @@
 
 .owners__quote {
   background-color: #FFFFFF;
-  border-left: 2px solid #476D8B;
+  border-left: 2px solid var(--soft-blue);
   padding: 20px;
 }
 
@@ -811,7 +811,7 @@
   letter-spacing: 0%;
   vertical-align: middle;
 
-  color: #273648;
+  color: var(--dark-blue);
   margin: 0;
 }
 

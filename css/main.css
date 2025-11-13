@@ -1,0 +1,36 @@
+/* ====== BASE ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #000;
+    --white: #fff;
+    --soft-white: #F7F2EC;
+    --dark-blue: #273648;
+    --soft-blue: #476D8B;
+}
+
+section {
+    background-color: var(--soft-white);
+}
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    color: #000;
+    overflow-x: hidden;
+    background-color:var(--soft-white);
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+

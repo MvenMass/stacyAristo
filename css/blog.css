@@ -52,7 +52,7 @@
     letter-spacing: 0%;
     vertical-align: middle;
     color: #fff;
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     display: inline-block;
@@ -78,7 +78,7 @@
     line-height: 130%;
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #476D8B;
+    color: var(--soft-blue);
     background-color: #EAECEC;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -104,11 +104,11 @@ font-size: 18px;
 line-height: 120%;
 letter-spacing: 0%;
 margin-bottom: 4px;
-color: #273648;
+color: var(--dark-blue);
 }
 
 .card-content-info__specialist {
-    color: #273648;
+    color: var(--dark-blue);
 
 }
 
@@ -129,14 +129,14 @@ line-height: 90%;
 letter-spacing: -2%;
 vertical-align: middle;
 margin: 0;
-color: #273648;
+color: var(--dark-blue);
 }
 
 .card-desc {
 line-height: 120%;
 letter-spacing: 0%;
 vertical-align: middle;
-color: #273648;
+color: var(--dark-blue);
 margin: 0;
 }
 
@@ -145,7 +145,7 @@ line-height: 130%;
 letter-spacing: -3%;
 vertical-align: middle;
 text-decoration: underline;
-color: #476D8B;
+color: var(--soft-blue);
 }
 /* ---- СТИЛИ ДЛЯ ТАБОВ ---- */
 .direction {
@@ -155,18 +155,18 @@ color: #476D8B;
     border-radius: 16px;
     margin: 0 5px 10px 0;
     background: #EAECEC;
-    color: #476D8B;
+    color: var(--soft-blue);
     display: inline-block;
     font-weight: 500;
 }
 .direction:hover, .direction:focus {
-    background: #476D8B;
+    background: var(--soft-blue);
     color: #fff;
     transform: scale(1.04);
 }
 /* Активная вкладка — если есть такая переменная или класс */
 .direction.active {
-    background: #273648;
+    background: var(--dark-blue);
     color: #fff;
     transform: scale(1.05);
 }

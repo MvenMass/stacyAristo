@@ -77,6 +77,42 @@ const articleSwiper = new Swiper(".article__slider", {
   },
 });
 
+
+const directionsSwiper = new Swiper(".directions.swiper", {
+  slidesPerView: 'auto',
+  spaceBetween: 15,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".directions-arrow--next",
+    prevEl: ".directions-arrow--prev",
+  },
+});
+
+
+const moreBlogSwiper = new Swiper('.more-blog__slider', {
+  slidesPerView: 'auto', // динамическое количество, карточки управляются шириной
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.more-blog__arrow--next',
+    prevEl: '.more-blog__arrow--prev',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 12
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 15
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }
+});
+
+
 // === Article Swiper (использует те же настройки что и review) ===
 const aricleSmall = new Swiper(".article-small__slider", {
   slidesPerView: 3,

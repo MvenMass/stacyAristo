@@ -1,7 +1,7 @@
 .name {
     font-size: 24px;
     font-weight: 600;
-    color: #476D8B;
+    color: var(--soft-blue);
     line-height: 1;
 }
 
@@ -9,7 +9,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
-    color: #273648;
+    color: var(--dark-blue);
 }
 
 .directions {
@@ -21,14 +21,14 @@
 .direction {
     background: #f0f0f0;
     border-radius: 20px;
-    color: #476D8B;
+    color: var(--soft-blue);
 }
 
 .rating {
 
     font-size: 14px;
     font-weight: 600;
-    color: #476D8B;
+    color: var(--soft-blue);
     display: flex;
     align-items: center;
     gap: 4px;
@@ -48,7 +48,7 @@
 
 .specialist-card {
     display: flex;
-    background: #F7F2EC;
+    background: var(--soft-white);
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 20px;
@@ -67,7 +67,7 @@
 }
 
 .btn {
-    background-color: #476D8B;
+    background-color: var(--soft-blue);
     display: inline-block;
     color: #fff;
 }

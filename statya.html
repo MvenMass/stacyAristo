@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stacy Aristo — Наши специалисты</title>
+    <link rel="stylesheet" href="/assets/fonts/font.css" />
+    <link rel="stylesheet" href="css/styleAbout.css" />
+    <link rel="stylesheet" href="css/statya.css" />
+    <link rel="stylesheet" href="css/main-article.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+
+    <!-- Шапка -->
+    <section class="hero-2">
+        <!-- ===== HEADER ===== -->
+        <header class="header">
+            <div class="container header__inner-about">
+                <div class="header__left-about">
+                    <img src="assets/img/logo.png" alt="Вершина" class="header__logo" />
+                    <div class="header__contacts">
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="/index.html">Консультации</a></li>
+                                <li><a href="/about.html">Специалисты</a></li>
+                                <li><a href="#">Супервизия</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">О нас</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path
+                            d="M14 0.199951C6.39084 0.199951 0.20004 6.39075 0.20004 14C0.20004 16.376 0.81384 18.7124 1.97784 20.774L0.22224 27.038C0.16464 27.2438 0.22044 27.4646 0.36924 27.6176C0.48384 27.7358 0.63984 27.8 0.80004 27.8C0.84804 27.8 0.89664 27.794 0.94404 27.7826L7.48164 26.1632C9.47784 27.2348 11.726 27.8 14 27.8C21.6092 27.8 27.8 21.6092 27.8 14C27.8 6.39075 21.6092 0.199951 14 0.199951ZM20.942 18.8696C20.6468 19.6868 19.2308 20.4326 18.5504 20.5328C17.9396 20.6222 17.1668 20.6606 16.3184 20.3942C15.8042 20.2322 15.1442 20.0174 14.2988 19.6568C10.745 18.1412 8.42424 14.6078 8.24664 14.3744C8.06964 14.141 6.80004 12.4778 6.80004 10.7564C6.80004 9.03495 7.71504 8.18835 8.04024 7.83795C8.36544 7.48755 8.74884 7.39995 8.98524 7.39995C9.22164 7.39995 9.45744 7.40295 9.66444 7.41255C9.88224 7.42335 10.1744 7.33035 10.4618 8.01315C10.757 8.71395 11.4656 10.4354 11.5532 10.6112C11.642 10.7864 11.7008 10.991 11.5832 11.2244C11.4656 11.4578 11.4068 11.6036 11.2292 11.8082C11.0516 12.0128 10.8572 12.2642 10.6976 12.4214C10.52 12.596 10.3358 12.785 10.5422 13.1354C10.7486 13.4858 11.4596 14.6312 12.5132 15.5588C13.8662 16.7504 15.008 17.12 15.362 17.2952C15.716 17.4704 15.923 17.441 16.1294 17.2076C16.3358 16.9736 17.015 16.1858 17.2508 15.836C17.4866 15.4862 17.723 15.5438 18.0482 15.6608C18.3734 15.7772 20.1152 16.6232 20.4692 16.7984C20.8232 16.9736 21.0596 17.0612 21.1484 17.207C21.2372 17.3522 21.2372 18.053 20.942 18.8696Z"
+                            fill="#476D8B" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path
+                            d="M14 0.199951C21.6218 0.199951 27.8 6.37815 27.8 14C27.8 21.6218 21.6218 27.8 14 27.8C6.37815 27.8 0.199951 21.6218 0.199951 14C0.199951 6.37815 6.37815 0.199951 14 0.199951ZM18.7604 19.625C19.0142 18.8462 20.2034 11.0846 20.3504 9.55515C20.3948 9.09195 20.2484 8.78415 19.9616 8.64675C19.6148 8.47995 19.1012 8.56335 18.5054 8.77815C17.6882 9.07275 7.24095 13.5086 6.63735 13.7654C6.06495 14.0084 5.52375 14.2736 5.52375 14.6576C5.52375 14.9276 5.68395 15.0794 6.12555 15.2372C6.58515 15.401 7.74255 15.752 8.42595 15.9404C9.08415 16.1222 9.83355 15.9644 10.2536 15.7034C10.6988 15.4268 15.8366 11.9888 16.2056 11.6876C16.574 11.3864 16.868 11.7722 16.5668 12.074C16.2656 12.3752 12.7388 15.7982 12.2738 16.2722C11.7092 16.8476 12.11 17.444 12.4886 17.6828C12.9212 17.9552 16.0322 20.042 16.5008 20.3768C16.9694 20.7116 17.4446 20.8634 17.8796 20.8634C18.3146 20.8634 18.5438 20.2904 18.7604 19.625Z"
+                            fill="#476D8B" />
+                    </svg>
+                    <a href="#" class="btn btn--small">Задать вопрос
+
+                    </a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="header__call">
+
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.3464 14.1139L14.7897 14.6999C14.7897 14.6999 13.4666 16.093 9.85489 12.2905C6.24325 8.48815 7.5664 7.09511 7.5664 7.09511L7.91693 6.72604C8.78056 5.81686 8.86196 4.35719 8.10846 3.29157L6.56731 1.11175C5.63478 -0.207167 3.83283 -0.381395 2.76399 0.743895L0.845592 2.76362C0.315612 3.32159 -0.0395411 4.04489 0.00353002 4.84727C0.113713 6.90002 0.990864 11.3167 5.88543 16.4698C11.0759 21.9343 15.9461 22.1515 17.9377 21.9549C18.5676 21.8928 19.1154 21.5531 19.5569 21.0882L21.2932 19.2604C22.4652 18.0265 22.1347 15.9111 20.6351 15.048L18.3001 13.704C17.3154 13.1373 16.116 13.3037 15.3464 14.1139Z"
+                            fill="#476D8B" />
+                    </svg>
+
+                </div>
+
+                <!-- выпадающее меню -->
+                <div class="header__menu">
+                    <button class="header__menu-close" aria-label="Закрыть меню">&times;</button>
+                    <a href="/index.html">Консалтинг</a>
+                    <a href="/about.html">Специалисты</a>
+                    <a href="#">О компании</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Контакты</a>
+                    <a href="#" class="btn btn--small">Заказать звонок</a>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="#">Главная</a>
+                <svg width="31" height="8" viewBox="0 0 31 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M30.3536 4.03568C30.5488 3.84042 30.5488 3.52384 30.3536 3.32858L27.1716 0.146595C26.9763 -0.0486672 26.6597 -0.0486672 26.4645 0.146595C26.2692 0.341857 26.2692 0.65844 26.4645 0.853702L29.2929 3.68213L26.4645 6.51056C26.2692 6.70582 26.2692 7.0224 26.4645 7.21766C26.6597 7.41293 26.9763 7.41293 27.1716 7.21766L30.3536 4.03568ZM0 3.68213V4.18213H30V3.68213V3.18213H0V3.68213Z"
+                        fill="#A9A9A9" />
+                </svg>
+                <a href="#">Наши специалисты</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="card-and-filter">
+        <div class="container-specialist">
+            <!-- Боковая панель -->
+            <div class="statya__block-content">
+                <aside class="statya__content statya__content-info">
+                    <h2 class="statya__content-title">Подобрать психолога</h2>
+
+                    <a href="#" class="statya-btn">Смотреть специалистов</a>
+                </aside>
+                <aside class="statya__content specialists-info__content">
+                    <h2 class="statya__content-title">Содержание:</h2>
+                    <ol class="statya__content-list">
+                        <li class="statya__content-item">Содержание статьи</li>
+                        <li class="statya__content-item">Содержание статьи</li>
+                        <li class="statya__content-item">Содержание статьи</li>
+                        <li class="statya__content-item">Содержание статьи</li>
+                        <li class="statya__content-item">Содержание статьи</li>
+                        <li class="statya__content-item">Содержание статьи</li>
+                    </ol>
+                </aside>
+            </div>
+
+
+
+
+            <!-- Фоновое затемнение -->
+            <div class="overlay" id="overlay"></div>
+
+            <!-- Основная область -->
+            <main class="main-content">
+
+
+                <!-- Карточки специалистов -->
+
+
+
+                <div class="statya-card__info">
+                    <!-- Информация -->
+                    <div class="card-content-info">
+                        <div class="card-content-info_img-block">
+                            <img class="card-content-info_img-block_small-img" src="./assets/img/hero2.jpg" alt="">
+                        </div>
+                        <div class="card-content-info-text">
+                            <p class="card-content-info_name">Имя автора статьи</p>
+                            <p class="card-content-info__specialist">Специализация</p>
+                        </div>
+                        <div class="directions">
+                            <div class="direction">Стресс</div>
+                            <div class="direction">Стресс</div>
+                        </div>
+                        <p class="card-content-info__date">12 декабря 2025</p>
+                    </div>
+                </div>
+
+                <div class="statya-card__content">
+                    <h2 class="statya-card__content-title">Название статьи</h2>
+                    <div class="statya-card__content-block_image">
+                        <img src="./assets/img/statya-1.jpg" alt="" class="statya-card__content-img">
+                    </div>
+                    <p class="specialist__text">
+                        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem
+                        Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а
+                        также реальное распределение букв и пробелов в абзацах, которое не получается при простой
+                        дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной
+                        вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по
+                        ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего
+                        настоящего рождения. 
+                    </p>
+                    <p class="statya-card__content-small_title">
+                        Глава 1
+                    </p>
+                    <p class="specialist__text">
+                        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem
+                        Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а
+                        также реальное распределение букв и пробелов в абзацах, которое не получается при простой
+                        дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной
+                        вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по
+                        ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего
+                        настоящего рождения. 
+                    </p>
+                    <p class="about-block__quote">
+                        Мы убеждены, что психология — это не просто набор техник, а целостное искусство понимания жизни.
+                        Опираясь на глубинные идеи Аристотеля о душе как форме живого тела, мы помогаем нашим клиентам
+                        обрести внутреннюю гармонию, где мысли, чувства и действия приходят в состояние эвдемонии —
+                        подлинного и осмысленного благополучия.
+                    </p>
+                    <div class="statya-card__content-block_text-image">
+                        <div class="statya-block_text-image">
+                            <img src="./assets/img/statya-1.jpg" alt="" class="statya-card__content-image">
+                        </div>
+                        <div class="statya-card__content-block_text">
+                            <p class="specialist__text">
+                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                                сосредоточиться.
+                            </p>
+                            <p class="specialist__text">
+                                Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
+                                заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не
+                                получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш
+                                текст.." </p>
+                            <p class="specialist__text">
+                                Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве
+                                текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает,
+                                как много веб-страниц всё ещё дожидаются своего настоящего рождения. 
+                            </p>
+                        </div>
+                    </div>
+                    <p class="statya-card__content-small_title">
+                        Список литературы:
+                    </p>
+                </div>
+
+                <div class="statya-card__content">
+                    <div class="statya-directions__navifation-block">
+                        <p class="statya-card__content-small_title">
+                            Другие статьи автора:
+                        </p>
+                        <div class="directions__arrows">
+                            <div class="directions-arrow--prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                                    fill="none">
+                                    <path d="M1.5 13.5L13.5 1.5M13.5 1.5V10.097M13.5 1.5L4.41429 1.5" stroke="#5D5650"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div class="directions-arrow--next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                                    fill="none">
+                                    <path d="M1.5 13.5L13.5 1.5M13.5 1.5V10.097M13.5 1.5L4.41429 1.5" stroke="#5D5650"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="directions swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide direction">Длинное название статьи</div>
+                            <div class="swiper-slide direction">Название статьи</div>
+                            <div class="swiper-slide direction">Длинное название статьи</div>
+                            <div class="swiper-slide direction">Название статьи</div>
+                            <div class="swiper-slide direction">Длинное название статьи</div>
+                            <div class="swiper-slide direction">Название статьи</div>
+                            <div class="swiper-slide direction">Длинное название статьи</div>
+                            <div class="swiper-slide direction">Длинное название статьи</div>
+                            <div class="swiper-slide direction">Длинное название статьи</div>
+                            <div class="swiper-slide direction">Длинное название статьи</div>
+                            <div class="swiper-slide direction">Длинное название статьи</div>
+                            <div class="swiper-slide direction">Длинное название статьи</div>
+                            <!-- повторяется -->
+                        </div>
+
+                        <!-- Навигационные стрелки, если нужны -->
+
+
+                    </div>
+                </div>
+
+                <div class="statya-card__content like-statya-block">
+                    <p class="statya-card__content-small_title">Понравилась статья?</p>
+                        <div class="statya-card__content-votes vote-group">
+                            <button class="vote-btn vote-btn--like" id="btnLike">
+                                Да
+                                <span class="vote-icon">
+                                    <!-- SVG лайка -->
+                                    <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.8851 19.99C6.20508 19.99 6.16133 19.7544 5.45758 19.225C5.08445 18.9444 4.3807 18.75 1.80883 18.5825C1.62258 18.57 1.44445 18.4987 1.3257 18.3544C1.27133 18.2875 -0.0136719 16.4137 -0.0136719 13.4125C-0.0136719 10.455 0.906328 9.10625 0.945078 9.04375C1.05883 8.86062 1.25945 8.75 1.47445 8.75C3.5857 8.75 6.5132 6.05437 8.4807 1.34938C8.8207 0.535625 8.89133 0 10.1413 0C10.852 0 11.6495 0.509375 12.0426 1.1625C12.8495 2.49687 12.4401 5.36312 12.0607 6.89437C13.3501 6.88375 15.6832 6.86625 16.7932 6.86625C18.3376 6.86625 19.3601 7.78687 19.3907 9.13312C19.4013 9.5775 19.3426 10.145 19.2145 10.4387C19.5545 10.7781 19.9926 11.2887 20.012 11.9475C20.0357 12.7975 19.4795 13.4444 19.1238 13.8156C19.2057 14.0625 19.3682 14.3906 19.3526 14.7825C19.3132 15.7462 18.5695 16.3669 18.1063 16.6912C18.1445 16.955 18.1751 17.4525 18.0901 17.8375C17.7557 19.3731 15.5045 19.99 11.8851 19.99ZM2.1407 17.315C4.3807 17.5006 5.5782 17.7512 6.20945 18.2269C6.6982 18.595 6.6232 18.7406 11.8851 18.7406C13.4901 18.7406 16.6288 18.6737 16.8701 17.5719C16.9657 17.1312 16.5013 16.6981 16.4995 16.695C16.3726 16.3819 16.5138 16.0144 16.8232 15.8794C16.8282 15.8769 18.0763 15.43 18.1045 14.7325C18.1232 14.2869 17.817 14.0187 17.8101 14.0075C17.6282 13.725 17.6945 13.3375 17.9707 13.145C17.9738 13.1425 18.7826 12.6525 18.7626 11.9844C18.7476 11.4537 18.0482 11.08 18.027 11.0681C17.8707 10.9787 17.757 10.8244 17.7213 10.6469C17.6863 10.4706 17.7257 10.285 17.8357 10.1419C17.8357 10.1419 18.1538 9.63687 18.142 9.16312C18.1188 8.14875 17.0282 8.11687 16.7945 8.11687C15.2176 8.11687 11.1688 8.1325 11.1688 8.1325C10.9507 8.13375 10.7613 8.03 10.6438 7.85562C10.5263 7.68125 10.5182 7.46375 10.5863 7.26562C11.197 5.5075 11.5382 2.74812 10.9713 1.80562C10.8045 1.5275 10.7663 1.25 10.1413 1.25C10.0545 1.25 9.84883 1.31875 9.63383 1.83062C7.5457 6.8275 4.42633 9.71812 1.8707 9.97875C1.65008 10.4812 1.2357 11.5225 1.2357 13.4119C1.2357 15.34 1.84695 16.8325 2.1407 17.315Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <span class="vote-group__divider"></span>
+                            <button class="vote-btn vote-btn--dislike" id="btnDislike">
+                                Нет
+                                <span class="vote-icon">
+                                    <!-- SVG дизлайка -->
+                                    <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.8851 0.000234604C6.20508 0.000234604 6.16133 0.235861 5.45758 0.765236C5.08445 1.04586 4.3807 1.24024 1.80883 1.40774C1.62258 1.42024 1.44445 1.49149 1.3257 1.63586C1.27133 1.70274 -0.0136719 3.57648 -0.0136719 6.57773C-0.0136719 9.53523 0.906328 10.884 0.945078 10.9465C1.05883 11.1296 1.25945 11.2402 1.47445 11.2402C3.5857 11.2402 6.5132 13.9359 8.4807 18.6409C8.8207 19.4546 8.89133 19.9902 10.1413 19.9902C10.852 19.9902 11.6495 19.4809 12.0426 18.8277C12.8495 17.4934 12.4401 14.6271 12.0607 13.0959C13.3501 13.1065 15.6832 13.124 16.7932 13.124C18.3376 13.124 19.3601 12.2034 19.3907 10.8571C19.4013 10.4127 19.3426 9.84524 19.2145 9.55149C19.5545 9.21211 19.9926 8.70148 20.012 8.04274C20.0357 7.19273 19.4795 6.54586 19.1238 6.17461C19.2057 5.92773 19.3682 5.59961 19.3526 5.20774C19.3132 4.24399 18.5695 3.62336 18.1063 3.29898C18.1445 3.03523 18.1751 2.53773 18.0901 2.15273C17.7557 0.617111 15.5045 0.000862122 11.8851 0.000862122V0.000234604ZM2.1407 2.67524C4.3807 2.48961 5.5782 2.23899 6.20945 1.76336C6.6982 1.39524 6.6232 1.24961 11.8851 1.24961C13.4901 1.24961 16.6288 1.31649 16.8701 2.41836C16.9657 2.85899 16.5013 3.29211 16.4995 3.29524C16.3726 3.60836 16.5138 3.97586 16.8232 4.11086C16.8282 4.11336 18.0763 4.56024 18.1045 5.25774C18.1232 5.70336 17.817 5.97149 17.8101 5.98274C17.6282 6.26523 17.6945 6.65273 17.9707 6.84523C17.9738 6.84773 18.7826 7.33774 18.7626 8.00586C18.7476 8.53648 18.0482 8.91024 18.027 8.92211C17.8707 9.01149 17.757 9.16586 17.7213 9.34336C17.6863 9.51961 17.7257 9.70523 17.8357 9.84836C17.8357 9.84836 18.1538 10.3534 18.142 10.8271C18.1188 11.8415 17.0282 11.8734 16.7945 11.8734C15.2176 11.8734 11.1688 11.8577 11.1688 11.8577C10.9507 11.8565 10.7613 11.9602 10.6438 12.1346C10.5263 12.309 10.5182 12.5265 10.5863 12.7246C11.197 14.4827 11.5382 17.2421 10.9713 18.1846C10.8045 18.4627 10.7663 18.7402 10.1413 18.7402C10.0545 18.7402 9.84883 18.6715 9.63383 18.1596C7.5457 13.1627 4.42633 10.2721 1.8707 10.0115C1.65008 9.50899 1.2357 8.46774 1.2357 6.57836C1.2357 4.65024 1.84633 3.15774 2.14008 2.67524H2.1407Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </span>
+                            </button>
+
+                        </div>
+
+                      <a href="#" class="btn btn--small">Поделиться
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+<g clip-path="url(#clip0_485_1317)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7371 0.599674C13.8626 -0.547357 12.007 0.0610694 12.007 1.49485V2.93454C9.17783 2.90105 7.24249 3.87355 5.95335 5.23165C4.57526 6.68347 4.00844 8.49855 3.77091 9.73965C3.65216 10.3601 4.05917 10.8103 4.48693 10.9658C4.89557 11.1143 5.44162 11.0507 5.80602 10.6342C6.84027 9.45202 8.84963 7.8021 12.007 7.9098V9.75517C12.007 11.1889 13.8626 11.7973 14.7371 10.6503L17.545 6.96775C18.1517 6.17205 18.1517 5.07795 17.545 4.28224L14.7371 0.599674ZM5.61151 8.70712C6.96541 7.52557 8.90888 6.41676 12.007 6.41676H12.7655C13.1844 6.41676 13.5239 6.75077 13.5239 7.16278L13.5238 9.75517L16.3316 6.07258C16.5338 5.80735 16.5338 5.44265 16.3316 5.17741L13.5238 1.49485V3.68053C13.5238 4.09252 13.1843 4.42651 12.7654 4.42651H12.007C8.59448 4.42651 7.06197 6.24985 7.06197 6.24985C6.35643 6.99313 5.90238 7.8765 5.61151 8.70712Z" fill="#F7F7F7"/>
+<path d="M5.25 0.75293H3C1.75736 0.75293 0.75 1.76028 0.75 3.00293V15.0029C0.75 16.2456 1.75736 17.2529 3 17.2529H15C16.2427 17.2529 17.25 16.2456 17.25 15.0029V12.7529C17.25 12.3387 16.9142 12.0029 16.5 12.0029C16.0858 12.0029 15.75 12.3387 15.75 12.7529V15.0029C15.75 15.4171 15.4142 15.7529 15 15.7529H3C2.58579 15.7529 2.25 15.4171 2.25 15.0029V3.00293C2.25 2.58871 2.58579 2.25293 3 2.25293H5.25C5.66421 2.25293 6 1.91714 6 1.50293C6 1.08871 5.66421 0.75293 5.25 0.75293Z" fill="#F7F7F7"/>
+</g>
+<defs>
+<clipPath id="clip0_485_1317">
+<rect width="18" height="18" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+                    </a>
+                </div>
+
+
+            </main>
+        </div>
+    </section>
+   
+<section class="more-blog">
+  <div class="container">
+    <div class="statya-directions__navifation-block">
+         <h2 class="statya-card__content-title more-blog__title">Название статьи</h2>
+            <div class="review__arrows">
+                    <div class="review__arrow review__arrow--prev more-blog__arrow more-blog__arrow--prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                            <path d="M1.5 13.5L13.5 1.5M13.5 1.5V10.097M13.5 1.5L4.41429 1.5" stroke="#5D5650"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="review__arrow review__arrow--next more-blog__arrow more-blog__arrow--next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                            <path d="M1.5 13.5L13.5 1.5M13.5 1.5V10.097M13.5 1.5L4.41429 1.5" stroke="#5D5650"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+    </div>
+   
+      <!-- Стрелки навигации (по желанию) -->
+      <div class="more-blog__arrow more-blog__arrow--prev"></div>
+      <div class="more-blog__arrow more-blog__arrow--next"></div>
+    <div class="more-blog__slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+         <div class="layout-card">
+                    <div class="card-image">
+                        <div class="card-date">Тег категории</div>
+                        <img src="./assets/img/blog.jpg" class="card-img" alt="Статья об отношениях">
+                        <div class="card-category_block">
+                            <div class="card-category">Стресс</div>
+                            <div class="card-category">Депрессия</div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-content-info">
+                        <div class="card-content-info_img-block">
+                            <img src="./assets/img/hero2.jpg" alt="" class="card-content-info-img-block-image">
+                        </div>
+                        <div class="card-content-info-text">
+                            <p class="card-content-info_name">Имя автора статьи</p>
+                            <p class="card-content-info__specialist">Специализация</p>
+                        </div>
+                        <p class="card-content-info__date">11.12.2024</p>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Длинный заголовок статьи</h3>
+                        <p class="card-desc">
+                            Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+                            Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
+                            шаблона...
+                        </p>
+                        <a href="" class="card__btn-read_more">Читать статью</a>
+                    </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="layout-card">
+                    <div class="card-image">
+                        <div class="card-date">Тег категории</div>
+                        <img src="./assets/img/blog.jpg" class="card-img" alt="Статья об отношениях">
+                        <div class="card-category_block">
+                            <div class="card-category">Стресс</div>
+                            <div class="card-category">Депрессия</div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-content-info">
+                        <div class="card-content-info_img-block">
+                            <img src="./assets/img/hero2.jpg" alt="" class="card-content-info-img-block-image">
+                        </div>
+                        <div class="card-content-info-text">
+                            <p class="card-content-info_name">Имя автора статьи</p>
+                            <p class="card-content-info__specialist">Специализация</p>
+                        </div>
+                        <p class="card-content-info__date">11.12.2024</p>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Длинный заголовок статьи</h3>
+                        <p class="card-desc">
+                            Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+                            Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
+                            шаблона...
+                        </p>
+                        <a href="" class="card__btn-read_more">Читать статью</a>
+                    </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="layout-card">
+                    <div class="card-image">
+                        <div class="card-date">Тег категории</div>
+                        <img src="./assets/img/blog.jpg" class="card-img" alt="Статья об отношениях">
+                        <div class="card-category_block">
+                            <div class="card-category">Стресс</div>
+                            <div class="card-category">Депрессия</div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-content-info">
+                        <div class="card-content-info_img-block">
+                            <img src="./assets/img/hero2.jpg" alt="" class="card-content-info-img-block-image">
+                        </div>
+                        <div class="card-content-info-text">
+                            <p class="card-content-info_name">Имя автора статьи</p>
+                            <p class="card-content-info__specialist">Специализация</p>
+                        </div>
+                        <p class="card-content-info__date">11.12.2024</p>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Длинный заголовок статьи</h3>
+                        <p class="card-desc">
+                            Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+                            Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
+                            шаблона...
+                        </p>
+                        <a href="" class="card__btn-read_more">Читать статью</a>
+                    </div>
+                </div>
+        </div>
+         <div class="swiper-slide">
+          <div class="layout-card">
+                    <div class="card-image">
+                        <div class="card-date">Тег категории</div>
+                        <img src="./assets/img/blog.jpg" class="card-img" alt="Статья об отношениях">
+                        <div class="card-category_block">
+                            <div class="card-category">Стресс</div>
+                            <div class="card-category">Депрессия</div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-content-info">
+                        <div class="card-content-info_img-block">
+                            <img src="./assets/img/hero2.jpg" alt="" class="card-content-info-img-block-image">
+                        </div>
+                        <div class="card-content-info-text">
+                            <p class="card-content-info_name">Имя автора статьи</p>
+                            <p class="card-content-info__specialist">Специализация</p>
+                        </div>
+                        <p class="card-content-info__date">11.12.2024</p>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Длинный заголовок статьи</h3>
+                        <p class="card-desc">
+                            Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+                            Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
+                            шаблона...
+                        </p>
+                        <a href="" class="card__btn-read_more">Читать статью</a>
+                    </div>
+                </div>
+        </div>
+         <div class="swiper-slide">
+          <div class="layout-card">
+                    <div class="card-image">
+                        <div class="card-date">Тег категории</div>
+                        <img src="./assets/img/blog.jpg" class="card-img" alt="Статья об отношениях">
+                        <div class="card-category_block">
+                            <div class="card-category">Стресс</div>
+                            <div class="card-category">Депрессия</div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-content-info">
+                        <div class="card-content-info_img-block">
+                            <img src="./assets/img/hero2.jpg" alt="" class="card-content-info-img-block-image">
+                        </div>
+                        <div class="card-content-info-text">
+                            <p class="card-content-info_name">Имя автора статьи</p>
+                            <p class="card-content-info__specialist">Специализация</p>
+                        </div>
+                        <p class="card-content-info__date">11.12.2024</p>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Длинный заголовок статьи</h3>
+                        <p class="card-desc">
+                            Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+                            Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
+                            шаблона...
+                        </p>
+                        <a href="" class="card__btn-read_more">Читать статью</a>
+                    </div>
+                </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Блок "Нужна помощь?" -->
+    <section class="promo">
+        <div class="container">
+            <div class="promo_block">
+                <h2 class="h2 promo-h2">Нужна
+                    <span>помощь?</span></h2>
+                <p class="promo-text">Опишите Ваш вопрос и мы свяжемся
+                    с Вами в течение 15 минут!</p>
+                <div class="where-start__button-block">
+                    <a href="#" class="suit__card-btn where-start__btn">Задать вопрос <svg
+                            xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <rect width="50" height="50" rx="25" fill="#476D8B" />
+                            <path d="M19 31L31 19M31 19V27.597M31 19H21.9143" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <div class="footer-bg">
+        <footer class="footer">
+            <div class="container footer__container">
+                <!-- Основной блок - 3 колонки -->
+                <div class="footer__main">
+                    <!-- 1-я часть - логотип -->
+                    <div class="footer__logo-section">
+                        <div class="footer__logo">
+                            <img src="/assets/img/logo-white.svg" alt="Логотип">
+                        </div>
+                    </div>
+
+                    <!-- 2-я часть - меню -->
+                    <div class="footer__menu-section">
+                        <nav class="footer__nav">
+                            <a href="#" class="footer__nav-item">Консультации</a>
+                            <a href="#" class="footer__nav-item">Специалисты</a>
+                            <a href="#" class="footer__nav-item">Супервизия</a>
+                            <a href="#" class="footer__nav-item">Блог</a>
+                            <a href="#" class="footer__nav-item">О нас</a>
+                        </nav>
+                    </div>
+
+                    <!-- 3-я часть - контакты -->
+                    <div class="footer__contacts-section">
+                        <p class="footer__question">Записаться</p>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link">
+                                <img src="/assets/img/foot-whatsapp.svg" alt="WhatsApp">
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img src="/assets/img/foot-telegramm.svg" alt="Telegram">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__links mob_links">
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        <a href="#" class="footer__link">Условия использования</a>
+                    </div>
+                </div>
+
+                <!-- Разделительная линия -->
+                <div class="footer__divider"></div>
+
+                <!-- Нижний блок - 3 пункта в линию -->
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© 2025 Все права защищены</p>
+                    <div class="footer__links">
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        <a href="#" class="footer__link">Условия использования</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      const btnLike = document.getElementById('btnLike');
+const btnDislike = document.getElementById('btnDislike');
+
+btnLike.addEventListener('click', function() {
+  btnLike.classList.add('active');
+  btnDislike.classList.remove('active');
+});
+
+btnDislike.addEventListener('click', function() {
+  btnDislike.classList.add('active');
+  btnLike.classList.remove('active');
+});
+
+    </script>
+   
+
+</body>
+
+</html>
