@@ -659,8 +659,17 @@ color: var(--soft-blue);
   border: none;
 }
 
+.fixed-bottom-menu {
+  display: none;
+}
 
+.popup-content {
+  display: none;
+}
 
+.popup-overlay {
+  display: none;
+}
 @media (max-width: 1024px) {
   .container-specialist {
     display: flex;
@@ -731,6 +740,14 @@ color: var(--soft-blue);
 }
 
 @media (max-width: 767px) {
+
+  .statya__content-info {
+    display: none;
+  }
+
+  .specialists-info__content {
+    display: none;
+  }
   .fixed-bottom-menu {
     position: fixed;
     left: 0;
@@ -786,6 +803,7 @@ color: var(--soft-blue);
   .popup-content {
     position: fixed;
     left: 0;
+    display: block;
     right: 0;
     bottom: -100%;
     width: 100vw;
